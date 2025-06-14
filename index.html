@@ -52,6 +52,7 @@
 </head>
 <body class="text-gray-800 antialiased">
 
+    <!-- Header Section -->
     <header class="header-gradient text-white shadow-lg">
         <div class="max-w-7xl mx-auto text-center py-20 px-6">
             <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight">Vote for a Better, Happier Society!</h1>
@@ -64,6 +65,7 @@
     <main class="max-w-7xl mx-auto p-4 sm:p-6 lg:p-8 -mt-16">
         <div class="space-y-16">
 
+            <!-- Candidates Section -->
             <section id="candidates" class="bg-white p-6 sm:p-8 rounded-2xl shadow-xl card-hover">
                 <h2 class="text-4xl font-bold text-gray-900 border-b-4 border-blue-200 pb-4 mb-8">Our 11 Candidates</h2>
                 <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-6 text-gray-700">
@@ -81,6 +83,7 @@
                 </ul>
             </section>
 
+            <!-- Agenda Section -->
             <section id="agenda" class="bg-white p-6 sm:p-8 rounded-2xl shadow-xl card-hover">
                 <h2 class="text-4xl font-bold text-gray-900 border-b-4 border-blue-200 pb-4 mb-8 text-center">Our Vision and Agenda: What We Stand For and Promise to Deliver</h2>
                 
@@ -139,28 +142,39 @@
                 </div>
             </section>
 
+            <!-- Voting Section -->
             <section id="vote" class="bg-blue-50 p-6 sm:p-8 rounded-2xl border-2 border-blue-200">
                 <h2 class="text-4xl font-bold text-gray-900 text-center mb-10">Vote in 2 Simple Steps</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                     
+                    <!-- Step 1: Download Ballot -->
                     <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center text-center card-hover">
                         <div class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-6">1</div>
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Download Pre-Filled Ballot</h3>
                         <p class="text-gray-600 mb-8">Click below to get the ballot image with our 11 candidates pre-ticked for your convenience.</p>
                         <a 
-  href="image/Ballot_Paper_Filled_JVT.jpg" 
-  download="Ballot_Paper_Filled_JVT.jpg" 
-  class="w-full text-center inline-flex items-center justify-center btn-primary"
->
+                            href="image/Ballot_Paper_Filled_JVT.jpg" 
+                            download="Ballot_Paper_Filled_JVT.jpg" 
+                            class="w-full text-center inline-flex items-center justify-center btn-primary"
+                        >
                             <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
                             Download Ballot
                         </a>
                     </div>
                     
+                    <!-- Step 2: Email Vote with Highlighted Warning -->
                     <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 flex flex-col items-center text-center card-hover">
                         <div class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mb-6">2</div>
                         <h3 class="text-2xl font-bold text-gray-900 mb-3">Email Your Vote</h3>
-                        <p class="text-gray-600 mb-8">This opens your email app with the address, subject, and candidate list ready. Just attach the image and send!</p>
+                        <p class="text-gray-600 mb-4">Click the button below to open your email app. The address and subject will be ready for you.</p>
+
+                        <!-- NEW: Highlighted reminder to attach the ballot -->
+                        <div class="w-full mt-2 mb-6 p-3 bg-green-100 border-l-4 border-green-500 text-green-800 rounded-r-lg animate-pulse">
+                            <p class="font-bold text-center">
+                                Most Important: Please attach the downloaded ballot image before sending your email!
+                            </p>
+                        </div>
+
                         <a href="mailto:rwa2jpronlinevote@gmail.com?subject=JVT%20Election%20Vote%20-%20Ballot&body=Dear%20JVT%20Election%20Team%2C%0A%0APlease%20find%20attached%20my%20completed%20ballot%20for%20the%20JVTA%20Election%202025.%0A%0A%0A%0ABest%20regards%2C%0A" class="w-full text-center inline-flex items-center justify-center btn-primary">
                            <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                             Email Your Ballot
@@ -172,6 +186,7 @@
         </div>
     </main>
 
+    <!-- Footer Section -->
     <footer class="text-center py-12 mt-16 bg-gray-100 border-t border-gray-200">
         <div class="max-w-7xl mx-auto px-6">
             <h3 class="text-2xl font-bold text-blue-700">“Vote Today, Shape Tomorrow”</h3>
